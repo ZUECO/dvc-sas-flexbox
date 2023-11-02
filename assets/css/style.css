@@ -1,72 +1,120 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
 }
 
 .container {
     display: flex;
-    background-color: red;
-    width: auto;
+
+
 }
 
 .contact {
-    background-color: yellow;
     display: flex;
     flex-direction: column;
-    flex-basis: 30%;
-    
+    width: 20%;
+
+    border-right: solid 1px rgb(222, 220, 220);
+
+}
+
+.main-all {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .main-user {
-    background-color: orange;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 5% 10% 5% 3%;
 }
 
 .main-user img {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
 }
 
+.main-status {
+    font-size: 12px;
+}
+
+.status {
+    font-size: 12px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .button {
-    background-color: aqua;
     display: flex;
     justify-content: center;
+    border-top: solid 1px rgb(222, 220, 220);
+    border-bottom: solid 1px rgb(222, 220, 220);
+    margin: 5% 0;
+
 }
 
 button {
     background-color: #A491D2;
     border-radius: 2px;
     color: white;
+    margin: 10% 0;
+    height: 40px;
+    width: 70%;
 }
+
+
 
 .user {
     display: flex;
-    justify-content: space-between;
+    gap: 8px;
+    padding: 5% 10% 5% 3%;
+    border-bottom: solid 1px rgb(222, 220, 220);
 }
 
 .user img {
     border-radius: 50%;
+    flex-shrink: 2;
     width: 50px;
     height: 50px;
 }
 
-.hand {
-    width: auto;
-    background-color: aquamarine;
-    display: flex;
-    justify-content: center;
-
-}
-
-.titulo {
-    padding: 0;
-    margin: 0;
-    width: auto;
-    background-color: blue;
+.chat {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-grow: 2;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+    width: 80%;
+
+}
+
+.hand {
+    width: 30%;
+}
+
+.hand img {
+    width: 100%;
 }
